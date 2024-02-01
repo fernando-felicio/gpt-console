@@ -15,7 +15,7 @@ public class ChatGPTConsole {
         // Se o RateLimiter permitir a solicitação, envie a solicitação para a API do OpenAI
         if (rateLimiter.allowRequest()) {
             String endpoint = "https://api.openai.com/v1/chat/completions";
-            String apiKey = "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";
+            String apiKey = "SUA_API_KEY_AQUI";
             String message = "Como posso te ajudar?";
             String response = sendRequest(endpoint, apiKey, message);
             System.out.println(response);
